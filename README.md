@@ -12,6 +12,8 @@
 
 Лицензия: та же, что и у Free Pascal
 
+См. также: https://gitlab.com/freepascal.org/fpc/source/-/issues/40901
+
 ---
 
 As of today, the popularity of programming languages is largely determined by how seamlessly they work with the most popular text encoding — UTF-8 (see http://utf8everywhere.org/).
@@ -25,3 +27,5 @@ To address this issue, I have written a simple module. It replaces standard stri
 You only need to add `uses utf8` at the beginning of your program to make the usual string functions work correctly. See demo.pas for an example.
 
 License: same as Free Pascal's one
+
+See also: https://gitlab.com/freepascal.org/fpc/source/-/issues/40901
