@@ -1,6 +1,6 @@
 program Test;
 
-{$H+}
+{$H+} // aliases string (without a specified length) to AnsiString
 
 uses
   utf8;
@@ -21,6 +21,7 @@ begin
   s:='������, ���!';
   WriteLn(pos('���', s)); // should be 9
   WriteLn(length('���')); // should be 3
+  WriteLn('Кодировка: ', StringCodePage(s)); // 0 with $H+, 65001 without
 
   WriteLn();
 
@@ -28,6 +29,7 @@ begin
   s:='Привет, мир!'; // 'мир' at pos 9
   WriteLn(pos('мир', s)); // should be 9, 15 without utf8 module
   WriteLn(length('мир')); // should be 3, 6 without utf8 module
+  WriteLn('Кодировка: ', StringCodePage(s)); // 0 with $H+, 65001 without
 
   WriteLn();
 	

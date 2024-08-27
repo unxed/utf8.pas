@@ -1,6 +1,6 @@
 unit utf8;
 
-{$H+}
+{$H+} // aliases string (without a specified length) to AnsiString
 
 interface
 
