@@ -261,7 +261,13 @@ begin
     StringReplace := SysUtils.StringReplace(s, OldPattern, NewPattern, Flags);
 end;
 
-begin
+initialization
+  (*
+  SetMultiByteConversionCodePage(CP_UTF8);
+  SetMultiByteFileSystemCodePage(CP_UTF8);
+  SetMultiByteRTLFileSystemCodePage(CP_UTF8);
+  *)
+
   LocaleChecked := false;
   LocaleIsUTF8  := false;
 end.
