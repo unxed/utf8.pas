@@ -1,5 +1,7 @@
 program Test;
 
+{$H+}
+
 uses
   utf8;
 

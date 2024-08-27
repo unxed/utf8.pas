@@ -1,5 +1,7 @@
 unit utf8;
 
+{$H+}
+
 interface
 
 uses
