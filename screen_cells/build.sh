@@ -1,3 +1,3 @@
 #!/bin/bash
-fpc ./demo2.pas
+fpc -Fu../lazutf8/single_file ./demo2.pas
 ./demo2

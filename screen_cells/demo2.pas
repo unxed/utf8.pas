@@ -4,6 +4,7 @@ program MyProgram;
 {$mode objfpc}{$H+}
 
 uses
+  lazutf8,
   cwstring,
   ctypes;
 
@@ -95,6 +96,7 @@ begin
   WriteLn('Строка: ', s);
   WriteLn('Количество экранных ячеек: ', screenCells);
   WriteLn('Количество графем: ', graphemes);
+  writeln('Количество кодовых точек: ', UTF8Length(s));
 
   // WriteLn('** Ширина символа: ', wcwidth(128512)); // U+1F600
 
