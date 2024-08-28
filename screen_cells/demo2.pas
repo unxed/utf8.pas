@@ -94,8 +94,8 @@ begin
   // Вывод результатов
   WriteLn();
   WriteLn('Строка: ', s);
-  WriteLn('Количество экранных ячеек: ', screenCells);
   WriteLn('Количество графем: ', graphemes);
+  WriteLn('Количество экранных ячеек: ', screenCells);
   writeln('Количество кодовых точек: ', UTF8Length(s));
 
   // WriteLn('** Ширина символа: ', wcwidth(128512)); // U+1F600
